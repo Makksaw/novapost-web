@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/style.css" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
@@ -33,7 +34,49 @@
             </div>
         </div>
 
-        <div class="main container"></div>
+        <div class="track container">
+            <form id="tracking-form">
+                <div class="tracking-content">
+                    <label for="tracking-number" class="tracking-text"
+                        >Enter parcel number:</label
+                    >
+                    <input
+                        type="text"
+                        id="tracking-number"
+                        name="tracking-number"
+                        class="tracking-input"
+                        placeholder="Required"
+                        required
+                    />
+                    <button type="submit" class="tracking-submit">Track</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="popup-overlay"></div>
+        <div class="popup-track">
+            <div class="popup-nav-parcel">
+                <div class="popup-parcel">№</div>
+                <div class="popup-close">&times;</div>
+            </div>
+            <div class="popup-main-parcel">
+                <div class="popup-parcel-number"></div>
+                <div class="popup-parcel-citysender"></div>
+                <div class="popup-parcel-cityrecipient"></div>
+                <div class="popup-parcel-documentcost"></div>
+                <div class="popup-parcel-announcedprice"></div>
+                <div class="popup-parcel-status"></div>
+            </div>
+        </div>
+
+        <div class="popup-error">
+            <div class="close-button">
+                <button class="popup-close">&times;</button>
+            </div>
+            <div class="popup-content">
+                <p class="novapost-error"></p>
+            </div>
+        </div>
 
         <script src="/js/track.js"></script>
     </body>
