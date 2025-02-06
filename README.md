@@ -6,7 +6,8 @@
 
 **Home Page:**
 
-![image](https://github.com/user-attachments/assets/b17ee3d7-7c32-4afa-aef2-88a244eb05f8)
+![image](https://github.com/user-attachments/assets/4a063030-0431-43d7-b7f4-79c4246c5821)
+
 
 **Track Page:**
 
